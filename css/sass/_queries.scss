@@ -510,7 +510,13 @@
     .form__input {
         width: 33rem;
         margin: 0 auto;
+        display: contents;
+        & input {
+            text-align: center;
+        }
     }
+
+    
 }
 
 @media (max-width: 375px) {
