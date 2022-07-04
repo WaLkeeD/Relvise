@@ -1,0 +1,80 @@
+.clients {
+    // .clients__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .clients__logos
+
+    &__logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 0;
+    }
+
+    // .clients__logo
+
+    &__logo {
+        padding: 0 2.5rem;
+    }
+
+    // .clients__form
+
+    &__form {
+        margin: 2rem 3.2rem;
+    }
+}
+
+.form {
+    // .form__body
+
+    &__body {
+        display: flex;
+        background-color: $secondary-color-2;
+        padding: 3rem 5rem;
+    }
+
+    // .form__heading
+
+    &__heading {
+        @include font(2.4rem, 700, calc(3.2 / 2.4 * 100%), 0.01rem);
+        color: #fff;
+        padding-right: 18rem;
+    }
+
+    // .form__input
+
+    &__input {
+        width: 45rem;
+        height: 5.8rem;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+        border-radius: .5rem;
+    }
+
+    &__input input {
+        background-color: #fff;
+        @include font(1.4rem, 400, calc(2.8 / 1.4 * 100%), 0.02rem);
+        flex: 1 1 auto;
+        padding: 1.5rem 2.2rem;
+    }
+
+    // .form__button
+
+    &__button {
+        @include font(1.4rem, 400, calc(2.8 / 1.4 * 100%), 0.02rem);
+        color: #fff;
+        padding: 1.5rem 2.2rem;
+        background-color: $primary-color;
+    }
+
+    &__button:hover {
+        background-color: #ff7b47b1;
+    }
+}
+
+

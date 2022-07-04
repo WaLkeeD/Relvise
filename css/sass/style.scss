@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+// abstract
+
+@import "abstract/constants";
+
+// base
+
+@import "base/base";
+
+// components
+
+@import "components/hero";
+@import "components/services";
+@import "components/advantages";
+@import "components/advices";
+@import "components/about";
+@import "components/clients";
+@import "components/contacts";
+
+
+// layouts
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "_queries.scss";

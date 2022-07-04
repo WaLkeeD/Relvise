@@ -1,0 +1,87 @@
+.page {
+    flex: 1 1 auto;
+    // .hero__main-block
+
+    &__main-block {
+        position: relative;
+    }
+}
+.main-block {
+    // .main-block__body
+
+    &__body {
+        padding: 18.4rem 0 19.1rem;
+        position: relative;
+        z-index: 2;
+        max-width: 39.9rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+
+    // .main-block__title
+
+    &__title {
+        @include font(5.8rem, 800, calc(8 / 5.8 * 100%), 0.02rem);
+    }
+
+    // .main-block__text
+
+    &__text {
+        @include font(2rem, 500, calc(3 / 2 * 100%), 0.02rem);
+        color: $second-text-color;
+    }
+
+    // .main-block__buttons
+
+    &__buttons {
+        display: inline-flex;
+        gap: 1rem;
+    }
+
+    // .main-block__button
+
+    &__button_colored {
+        padding: 1rem 3.6rem;
+        border-radius: 3.7rem;
+        color: #fff;
+        background-color: $primary-color;
+        cursor: pointer;
+        border: 1px solid $primary-color;
+
+
+        @include font(1.4rem, 700, calc(2.8 / 1.4 * 100%), 0.02rem);
+
+        &:hover {
+            background-color: #fff;
+            color: $primary-color;
+        }
+    }
+
+    &__button_bordered {
+        padding: 1rem 3.6rem;
+        border-radius: 3.7rem;
+        border: 1px solid #0d5c63;
+        color: $secondary-color-1;
+        cursor: pointer;
+
+        @include font(1.4rem, 700, calc(2.8 / 1.4 * 100%), 0.02rem);
+
+        &:hover {
+            background-color: $secondary-color-1;
+            color: #fff;
+        }
+    }
+
+    // .main-block__image
+
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}

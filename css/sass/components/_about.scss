@@ -1,0 +1,111 @@
+.about {
+    // .about__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        padding: 10rem 0;
+    }
+
+    // .about__header
+
+    &__header {
+        margin: 0 9.3rem;
+        padding: 0 17.65rem;
+        text-align: center;
+    }
+
+    // .about__title
+
+    &__title {
+        @extend %header-title;
+    }
+
+    // .about__text
+
+    &__text {
+        @extend %header-text;
+    }
+
+    // .about__columns
+
+    &__columns {
+        display: flex;
+        gap: 12rem;
+    }
+
+    // .about__img
+
+    &__img img {
+        width: 60rem;
+    }
+
+    // .about__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    // .about__card-header
+
+    &__card-header {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 0;
+    }
+
+    // .about__card-title
+
+    &__card-title {
+        @extend %header-title;
+        text-align: left;
+    }
+
+    // .about__card-text
+
+    &__card-text {
+        @extend %header-text;
+        text-align: left;
+    }
+
+    // .about__card
+
+    &__card {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.card {
+    // .card__icon
+
+    &__icon img{
+        padding-top: 0.5rem;
+    }
+
+    // .card__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    // .card__title
+
+    &__title {
+        @include font(1.6rem, 700, calc(2.4 / 1.6 * 100%), 0.01rem);
+        color: $text-color;
+    }
+
+    // .card__text
+
+    &__text {
+        @include font(1.4rem, 600, calc(2.4 / 1.4 * 100%), 0.02rem);
+        color: $second-text-color;
+    }
+}

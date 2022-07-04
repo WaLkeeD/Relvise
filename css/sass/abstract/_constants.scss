@@ -1,0 +1,30 @@
+// colors
+
+$text-color: #252b42;
+$second-text-color: #737373;
+$primary-color: #ff7b47;
+$hover-block: #0d5c63;
+$secondary-color-1: #0d5c63;
+$secondary-color-2: #17213C;
+$font-family: Montserrat;
+
+// font-size
+
+@mixin font($size, $weight, $height, $letter-spacing) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $letter-spacing;
+}
+
+%header-title {
+    @include font(4rem, 700, calc(5.7 / 4 * 100%), 0.02rem);
+    text-align: center;
+    color: $text-color;
+}
+
+%header-text {
+    @include font(1.4rem, 500, calc(2 / 1.4 * 100%), 0.02rem);
+    color: $second-text-color;
+    text-align: center;
+}

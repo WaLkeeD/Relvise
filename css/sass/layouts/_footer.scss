@@ -1,0 +1,163 @@
+.footer {
+    // .footer__div
+
+    &__div {
+        background-color: rgb(245, 243, 243);
+    }
+
+    &__div_blue {
+        background-color: $secondary-color-2;
+    }
+
+    // .footer__body-first
+
+    &__body-first {
+        padding: 4rem 0;
+    }
+
+    // .footer__container-first
+
+    &__container-first {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__left
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    // .footer__heading
+
+    &__heading {
+        @include font(2.4rem, 700, calc(3.2 / 2.4 * 100%), 0.01rem);
+        color: $text-color;
+    }
+
+    // .footer__text
+
+    &__text {
+        @include font(1.4rem, 500, calc(2 / 1.4 * 100%), 0.02rem);
+        color: $secondary-color-1;
+    }
+
+    // .footer__right
+
+    &__right {
+        padding: 0 3.8rem;
+    }
+
+    // .footer__button
+
+    &__button {
+        @include font(1.4rem, 700, calc(2.8 / 1.4 * 100%), 0.02rem);
+        background-color: $primary-color;
+        color: #fff;
+        font-family: Montserrat;
+        padding: 1.5rem 4rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+            background-color: #ff7b47b1;
+        }
+    }
+
+    // .footer__container-second
+
+    &__container-second {
+        padding: 5rem 0;
+    }
+
+    // .footer__body-second
+
+    &__body-second {
+        display: flex;
+        gap: 5rem;
+        justify-content: start;
+        color: #fff;
+    }
+
+    // .footer__column
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    // .footer__container-third
+
+    &__container-third {
+        padding: 2.5rem 0;
+    }
+
+    // .footer__body-third
+
+    &__body-third {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__socials
+
+    &__socials {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.column {
+    // .column__heading-small
+
+    &__heading-small {
+        @include font(1.6rem, 700, calc(2.4 / 1.4 * 100%), 0.01rem);
+    }
+
+    // .column__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    // .column__text
+
+    &__link {
+        @include font(1.4rem, 600, calc(2.4 / 1.4 * 100%), 0.02rem);
+        color: #fff;
+        font-family: $font-family;
+
+        &:hover {
+            color: $primary-color;
+            transition: all 0.3s;
+        }
+    }
+
+    // .column__row
+
+    &__row {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+.row {
+    // .row__text
+
+    &__text {
+        @include font(1.4rem, 600, calc(2.4 / 1.4 * 100%), 0.02rem);
+        color: #fff;
+        font-family: $font-family;
+    }
+}
+.socials {
+    // .socials__icon
+
+    &__icon {
+        cursor: pointer;
+    }
+}
