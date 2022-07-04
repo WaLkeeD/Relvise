@@ -25,6 +25,11 @@
     .header__container {
         min-height: 7rem;
     }
+
+    .menu__item {
+        flex: 1 1 33%;
+        text-align: center;
+    }
 }
 
 // media queries for HERO SECTION
@@ -458,7 +463,7 @@
 @media (max-width: 768px) {
     .clients__logos {
         flex-wrap: wrap;
-        gap: 4rem;
+        gap: 3rem;
     }
 
     .clients__logo {
@@ -504,7 +509,14 @@
 
     .form__input {
         width: 33rem;
+        margin: 0 auto;
+        display: contents;
+        & input {
+            text-align: center;
+        }
     }
+
+    
 }
 
 @media (max-width: 375px) {
@@ -514,7 +526,7 @@
     }
 
     .clients__logo {
-        width: 20%;
+        width: 30%;
     }
 
     .form__input {
